@@ -78,42 +78,46 @@ class User extends Component  {
 
 
 class App extends Component {
-  render() {
-    return (
-        <MyProvider>
-            <div className="App">
-                <h1>TOY MANIA!</h1>
-                <User />
-                <section>
-                    <div>
-                        <h2>Mr. Potato Head</h2>
-                        <img src="https://d3nevzfk7ii3be.cloudfront.net/igi/JPpjbao64ZTJAPmV.large" alt="Mr. Potato Head" width="300px"/>
-                        <AddtoCartButton/>
-                        <RemoveItemButton/>
-                    </div>
-                    <div>
-                        <h2>Spiderman</h2>
-                        <img src="https://multimedia.bbycastatic.ca/multimedia/products/500x500/105/10585/10585905.jpg" alt="Spiderman" width="200px"/>
-                        <AddtoCartButton/>
-                        <RemoveItemButton/>
-                    </div>
-                    <div>
-                        <h2>Dog Toy</h2>
-                        <img src="https://lumiere-a.akamaihd.net/v1/images/file_319c811a.jpeg?width=1200&region=0%2C0%2C2000%2C2000" alt="Dog Toy" width="200px"/>
-                        <AddtoCartButton/>
-                        <RemoveItemButton/>
-                    </div>
-                    <div>
-                        <h2>Creepy Monkey</h2>
-                        <img src="https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/dP4AAOSw-jhUBY3k/$_35.JPG?set_id=2" alt="Creepy Monkey" width="200px"/>
-                        <AddtoCartButton/>
-                        <RemoveItemButton/>
-                    </div>
-                </section>
-            </div>
-        </MyProvider>
-    );
-  }
+    render() {
+        return (
+            <MyProvider>
+                <div className="App">
+                    <h1>TOY MANIA!</h1>
+                    <User />
+                    <section>
+                        <div>
+                            <h2>Mr. Potato Head</h2>
+                            <img src="https://d3nevzfk7ii3be.cloudfront.net/igi/JPpjbao64ZTJAPmV.large" alt="Mr. Potato Head" width="300px"/>
+                            <p>Price: $11.99</p>
+                            <AddtoCartButton/>
+                            <RemoveItemButton/>
+                        </div>
+                        <div>
+                            <h2>Spiderman</h2>
+                            <img src="https://multimedia.bbycastatic.ca/multimedia/products/500x500/105/10585/10585905.jpg" alt="Spiderman" width="200px"/>
+                            <p>Price: $31.99</p>
+                            <AddtoCartButton/>
+                            <RemoveItemButton/>
+                        </div>
+                        <div>
+                            <h2>Dog Toy</h2>
+                            <img src="https://lumiere-a.akamaihd.net/v1/images/file_319c811a.jpeg?width=1200&region=0%2C0%2C2000%2C2000" alt="Dog Toy" width="200px"/>
+                            <p>Price: $14.99</p>
+                            <AddtoCartButton/>
+                            <RemoveItemButton/>
+                        </div>
+                        <div>
+                            <h2>Creepy Monkey</h2>
+                            <img src="https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/dP4AAOSw-jhUBY3k/$_35.JPG?set_id=2" alt="Creepy Monkey" width="200px"/>
+                            <p>Price: $16.99</p>
+                            <AddtoCartButton/>
+                            <RemoveItemButton/>
+                        </div>
+                    </section>
+                </div>
+            </MyProvider>
+        );
+    }
 }
 
 export default App;
